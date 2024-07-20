@@ -1,5 +1,6 @@
 package br.com.alura.screenmatch.modelos;
 
+//classe mãe
 public class Titulo {
     //todos os atributos de um objeto devem ser privados
     private String nome;
