@@ -11,6 +11,12 @@ public class Titulo {
     private boolean incluidoNoPlano;
     private double somaDasAvaliacoes;
 
+    //Construtor padrão para as classes filhas
+    public Titulo(String nome, int anoDeLancamento) {
+        this.nome = nome;
+        this.anoDeLancamento = anoDeLancamento;
+    }
+
     //setter
     public void setNome(String nome) {
         this.nome = nome;
@@ -29,6 +35,14 @@ public class Titulo {
     }
 
     //Getter
+    public String getNome() {
+        return nome;
+    }
+
+    public int getAnoDeLancamento() {
+        return anoDeLancamento;
+    }
+
     public int getDuracaoEmMinutos() {
         return duracaoEmMinutos;
     }
