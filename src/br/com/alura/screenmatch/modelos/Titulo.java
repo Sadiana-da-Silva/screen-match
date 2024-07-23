@@ -1,7 +1,7 @@
 package br.com.alura.screenmatch.modelos;
 
 //classe mãe
-public class Titulo {
+public class Titulo implements Comparable<Titulo> {
     //todos os atributos de um objeto devem ser privados
     private String nome;
     private String genero;
@@ -73,5 +73,10 @@ public class Titulo {
 
     public double pegaMedia(){
         return somaDasAvaliacoes / totalAvaliacoes;
+    }
+
+    @Override
+    public int compareTo(Titulo outroTitulo) {
+        return this.getNome().compareTo(outroTitulo.getNome());
     }
 }
