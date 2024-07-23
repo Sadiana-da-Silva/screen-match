@@ -1,3 +1,5 @@
+package br.com.alura.screenmatch.principal;
+
 import br.com.alura.screenmatch.calculos.CalculadoraDeTempo;
 import br.com.alura.screenmatch.calculos.FiltroRecomendacao;
 import br.com.alura.screenmatch.modelos.Episodio;
@@ -54,12 +56,12 @@ public class Principal {
         episodio.setTotalVisualizacoes(300);
         filtro.filtra(episodio);
 
-        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
-        listaDeFilmes.add(filme1);
-        listaDeFilmes.add(filme2);
-        listaDeFilmes.add(filme3);
-        System.out.println("Tamanho da lista: " + listaDeFilmes.size());
-        System.out.println("toString do filme: " + listaDeFilmes.get(0).toString());
-        System.out.println(listaDeFilmes);
+        ArrayList<Filme> lista = new ArrayList<>();
+        lista.add(filme1);
+        lista.add(filme2);
+        lista.add(filme3);
+        System.out.println("Tamanho da lista: " + lista.size());
+        System.out.println("toString do filme: " + lista.get(0).toString());
+        System.out.println(lista);
     }
 }
